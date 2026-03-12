@@ -37,4 +37,17 @@ public double getTotalCost(){
  public String toString(){
         return "Seat type:" + seats + " Number of games : " + numGames + " tour of stadium: " + tour + " Total Cost: " + totalCost;
     }    
+
+    public void setSeats(String s){
+        this.seats = s;
+    }
+    public void setNumGames(int ng){
+        this.numGames = ng;
+    }
+    public void setTour(boolean t){
+        this.tour = t;
+    }
+    public void setTotalCost(){
+        this.totalCost = processFee * numGames;
+    }
 } 
